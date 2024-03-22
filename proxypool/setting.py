@@ -58,7 +58,7 @@ REDIS_KEY = env.str('PROXYPOOL_REDIS_KEY', env.str(
 # definition of proxy scores
 PROXY_SCORE_MAX = env.int('PROXY_SCORE_MAX', 100)  # 最大分数
 PROXY_SCORE_MIN = env.int('PROXY_SCORE_MIN', 0)  # 最小分数
-PROXY_SCORE_INIT = env.int('PROXY_SCORE_INIT', 10)  # 初始分数
+PROXY_SCORE_INIT = env.int('PROXY_SCORE_INIT', 5)  # 初始分数
 
 # definition of proxy number
 PROXY_NUMBER_MAX = 50000
@@ -71,8 +71,8 @@ CYCLE_GETTER = env.int('CYCLE_GETTER', 100)
 GET_TIMEOUT = env.int('GET_TIMEOUT', 10)
 
 # 测试模块的相关参数
-# TEST_URL = env.str('TEST_URL', 'http://www.baidu.com')  # 这是使用为baidu是表示其为通用检测的，但应该设置为目标网址
-TEST_URL = env.str('TEST_URL', 'https://s.wanfangdata.com.cn/advanced-search/paper')
+TEST_URL = env.str('TEST_URL', 'http://www.baidu.com')  # 这是使用为baidu是表示其为通用检测的，但应该设置为目标网址
+# TEST_URL = env.str('TEST_URL', 'https://s.wanfangdata.com.cn/advanced-search/paper')
 TEST_TIMEOUT = env.int('TEST_TIMEOUT', 10)
 TEST_BATCH = env.int('TEST_BATCH', 32)  # 批量测试最大值，如果内存开销太大，应该减少该数值
 # only save anonymous proxy

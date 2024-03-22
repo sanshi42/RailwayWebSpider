@@ -42,3 +42,33 @@ python run.py
 
 ### 3. 实战开始
 
+#### 3.1 定义爬取字段的Item
+
+标题（titile）
+
+摘要（summary）
+
+作者（authors
+
+作者机构organization
+
+期刊名称（periodical_name）
+
+ISSN（issn）
+
+年,卷(期)（publish_data）
+
+分类号cls_num
+
+分类号中文名cls_name
+
+#### 3.2 主要爬取逻辑   
+
+- 初始的爬取请求
+- 实现Spider解析的基本逻辑
+  - Scrapy无法解释JavaScript代码，所以直接在解析中使用selenium
+  - 完善整体逻辑，实现一个初步的爬虫
+- 定义使用IP池的下载器中间件解决封IP的问题
+  - 同时开启Scrapy对于协程的支持，这使用的是协程对象
+
+- 完善Spider的逻辑
